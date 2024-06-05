@@ -76,7 +76,7 @@
 </head>
 <body>
     <p id="warningText">dont spam the button/webhook and only send username ONCE</p>
-    <p id="infoText">Prize pool: 84 Robux</p>
+    <p id="infoText">Prize pool: ?? Robux</p>
     <input type="text" id="inputBox" placeholder="Username here.." oninput="checkInput()">
     <button id="sendButton" disabled onclick="sendMessage()">Enter</button>
     <script>
@@ -94,7 +94,7 @@
 
         function sendMessage() {
             const box = document.getElementById('inputBox');
-            const message = `${box.value} - entered (pricepool: 84)`;
+            const message = `${box.value} - entered (pricepool: ?)`;
             const url = 'https://discord.com/api/webhooks/1247942020069330984/HCF8jdDJISg-ZrC_YAJFWjn5da4iD3vE9LmhufB196T5yFGKnINdad5JTminzuUUwkCn';
             const payload = JSON.stringify({ content: message });
             const body = document.querySelector('body');
@@ -137,6 +137,7 @@
 
 <p id="winnerss">Winners</p>
     <div class="winners">
+        </p>retard won 84 robux - 6/5/2024 (10:44PM)</p>
         </p>greg won 3 robux - 6/5/2024 (8:17PM)</p>
         </p>bobo won 6 robux - 6/5/2024 (7:20PM)</p>
     </div>
