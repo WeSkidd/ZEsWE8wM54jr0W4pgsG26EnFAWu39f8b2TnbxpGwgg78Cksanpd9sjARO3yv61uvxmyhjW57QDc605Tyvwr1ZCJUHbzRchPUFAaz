@@ -75,7 +75,7 @@
     </style>
 </head>
 <body>
-    <p id="warningText">what not to do: dont spam the button/webhook and only send username ONCE</p>
+    <p id="warningText">dont spam the button/webhook and only send username ONCE</p>
     <p id="infoText">Prize pool: 84 Robux</p>
     <input type="text" id="inputBox" placeholder="Username here.." oninput="checkInput()">
     <button id="sendButton" disabled onclick="sendMessage()">Send</button>
@@ -111,7 +111,7 @@
                 if (response.ok) {
                     body.classList.add('hidden');
                     setTimeout(() => {
-                        body.innerHTML = `<p>Thanks for entering, ${box.value}</p>`;
+                        body.innerHTML = `<p>Successfully entered, ${box.value}</p>`;
                         body.classList.remove('hidden');
                     }, 1000);
                 } else {
